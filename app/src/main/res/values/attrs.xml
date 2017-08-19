@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="ItemCardView">
+        <attr name="card_name" format="string" />
+        <attr name="card_image" format="reference" />
+    </declare-styleable>
+
+
+</resources>

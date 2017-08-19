@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.ztz.touchdemo.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/arcprogress1"
+                card:arc_bottom_text="存储空间"
+                card:arc_progress="55"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                card:arc_bottom_text="内存"
+                android:id="@+id/arcprogress2"
+                card:arc_progress="55"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="系统工具" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#20000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.ztz.touchdemo.utils.ItemCardView
+                        android:id="@+id/icv_card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        card:card_image="@mipmap/ic_app"
+                        card:card_name="软件管理">
+
+
+                    </com.ztz.touchdemo.utils.ItemCardView>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#20000000" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#20000000" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="便捷工具" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.ztz.touchdemo.utils.ItemCardView
+                        android:id="@+id/icv_card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card:card_image="@mipmap/ic_flashlight"
+                        card:card_name="手电筒" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.ztz.touchdemo.utils.ItemCardView
+                        android:id="@+id/icv_card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card:card_image="@mipmap/ic_smshelper"
+                        card:card_name="验证码" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.ztz.touchdemo.utils.ItemCardView
+                        android:id="@+id/icv_card4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card:card_image="@mipmap/ic_call"
+                        card:card_name="来电助手" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.ztz.touchdemo.utils.ItemCardView
+                        android:id="@+id/icv_card5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card:card_image="@mipmap/ic_redpacket"
+                        card:card_name="抢红包" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
